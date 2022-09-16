@@ -1,10 +1,10 @@
+raster
 gdistance
 rgdal
 latticeExtra
 gridExtra
 FNN
 terra
-raster
 data
 stats
 ggplot2
