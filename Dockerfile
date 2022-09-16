@@ -1,4 +1,4 @@
-FROM rocker/binder:4.2.0
+FROM rocker/binder:latest
 
 ## Declares build arguments
 ARG NB_USER
@@ -19,3 +19,5 @@ USER ${NB_USER}
 
 ## Run an install.R script, if it exists.
 RUN if [ -f install.R ]; then R -f install.R; fi
+
+RUN R --quiet -e "IRkernel::installspec()"
